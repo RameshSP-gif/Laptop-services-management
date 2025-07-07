@@ -1,10 +1,11 @@
 const mysql = require('mysql2/promise');
 
 const db = mysql.createPool({
-  host: 'localhost',
+  host: 'ballast.proxy.rlwy.net',
   user: 'root',
-  password: 'root',
-  database: 'laptop_service'
+  password: 'WjJmOBrxBYatyqzmPKEgtWUKLlfjfXNR',
+  database: 'laptop_service',
+  port: 25822,
 });
 
 module.exports = db;
